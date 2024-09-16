@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Arcturus</title>
+  <title>Deep-sea sediment sampler</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -84,11 +84,11 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Arcturus</h1>
+        <h1 class="mb-2 mb-lg-0">Deep-sea sediment sampler</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Arcturus</li>
+            <li class="current">Deep-sea sediment sampler</li>
           </ol>
         </nav>
       </div>
@@ -122,15 +122,11 @@
           <div class="swiper-wrapper align-items-center">
 
             <div class="swiper-slide">
-              <img src="assets/img/portfolio/Arcturus/IMG_3545.jpg"  class="portfolio-img" alt="">
+              <img src="assets/img/portfolio/2.007/final robot.jpg"  class="portfolio-img" alt="">
             </div>
 
             <div class="swiper-slide">
-              <img src="assets/img/portfolio/Arcturus/arc.jpg"  class="portfolio-img" alt="">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/img/portfolio/Arcturus/thrustercageboat.png"  class="portfolio-img" alt="">
+              <img src="assets/img/portfolio/2.007/c_v2final.jpg"  class="portfolio-img" alt="">
             </div>
 
           </div>
@@ -145,7 +141,10 @@
             <div class="portfolio-description">
               <h2>About this project</h2>
               <p>
-                <b>Arcturus is an Autonomous Marine Robotics Team that some friends and I founded in 2021.</b> Over the last three years, our team has tripled in size reaching <b>60 active members</b>, competed in <b>3 international competitions</b>, and published a <b>paper for the Oceans 2023 conference</b>. As a team, our goal is to create a welcoming community for students to gain hands-on learning experience through building and programming autonomous vehicles. As the mechanical engineering lead, I’ve overseen the design and fabrication of mechanical systems on our competition boats: "Ship Happens," our primary vehicle from our first two seasons, and "Fish and Ships," our new flagship, which we aim to compete with in 2025.</p>
+                In collaboration with Inkfish, a submersible technology company, we developed a deep-sea sediment core sampler that will collect four inches of sediment from the Mariana Trench. Designed to easily mount onto Inkfish's landers without interfering with their primary mission of gathering video and biological samples, our device increases accessibility to hadal sediment core samples, broadening our limited understanding of the deep sea. These samples are crucial for assessing the health of the deep-sea environment and gaining insights into the organisms that currently or historically inhabited the seabed. 
+              </p>
+              <!-- <div class="ratio-16-9"> <iframe title="Deep-sea sediment sampler" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/cbdfbd27792a45faba133c9484e78a4a/embed"> </iframe></div> -->
+
             </div>
           </div>
 
@@ -153,9 +152,10 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>For fun</li>
+                <li><strong>Category</strong>Research project</li>
                 <!-- <li><strong>Client</strong> ASU Company</li> -->
-                <li><strong>Project date</strong>Fall 2021- Spring 2024</li>
+                <li><strong>Project date</strong>Spring 2022</li>
+                <li><strong>Skills used</strong>Milling, lathe, CAD</li>
                 <!-- <li><strong>Project URL</strong> <a href="#">www.example.com</a></li> -->
                 <!-- <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li> -->
               </ul>
@@ -201,24 +201,33 @@
               <div class="swiper-button-next"></div>
               <div class="swiper-pagination"></div>
             </div> -->
-            <h2>"Fish and Ships" ( 2023 - Present) </h2>
-            <h3>Design</h3>
+            <h2>Design requirements</h2>
               <p>
-                The main goals for "Fish and Ships" were to be lighter and smaller than "Ship Happens" to increase maneuverability in the water and ease of transport to and from testing. 
-
-                In 2023 our team decided to retire our boat Ship Happens and start designing our new boat using the knowledge we gained from the previous two years.
+                Our system must face several key constraints: 
+                <li>Limited Onboard Resources:  Minimal or no onboard computation and electrical power source</li>
+                <li>Pressure Tolerance: Must withstand extreme pressures at depths of up to 10,000 meters</li>
+                <li>Sample Condition: Preserved soil layers to analyze the history</li>
+              </p>
+              <p>
+                To solve these issues:
+                <li>We designed the system to be entirely mechanical because underwater actuators suitable for use in hadal conditions are difficult to source and require additional communication and power resources</li>
+                <li>To withstand the extreme pressure at 10,000 meters, we incorporated low-tolerance interfaces and primarily used aluminum due to its minimal volumetric strain under maximum hadal pressures (~3%)</li>
+                <li>The sampler collection system minimizes disturbance to the seabed to preserve soil layers</li>
               </p>
 
-              <p>
-                After researching, we decided on a catamaran because of its stability, speed, and energy efficiency. The hulls have a U-shaped cross-section to maximize the volume-to-surface area ratio and come to a point in the front and back to decrease drag. The hulls also have integrated plywood with T-nuts as hardpoints for mounting electronics, sensors, and thrusters, along with dedicated cavities for housing the batteries. Moving the batteries from above the hulls into the hulls decreases the overall boat dimension and increases the stability. The length and width of "Fish and Ships" are <b>48 in and 34 in</b> respectively compared to <b>70 in and 30 in</b> on "Ship Happens."
-              </p>
-
-            <h3>Manufacturing</h3>
-            <p>The core of the hulls are made from layers of foam board which are CNC milled and stacked to create the final hull shape. The rigid foam interior ensures the boat will continue to float, even if punctured, unlike a hollow interior. 
-
-              For the outer layer, we cut a fiberglass sheet to fit the foam's outer surface, measured and applied epoxy to the sheet based on its weight, laid the soaked sheet over the foam, and placed it in a vacuum bag to remove excess epoxy. This was an improved version of the method used to create our first boat, where we covered the foam hulls with strips of fiberglass saturated with epoxy and let them cure in the air. The new hulls of Fish and Ships are <b>36 lbs</b> each compared to the Ship Happens which were <b>47 lbs each.</b></p>
+              <!-- <p>
+                Powered by two motors
+                Left and Right sides are assembled such that the motors are on opposite sides of the chassis to decrease overall width. 
+                Top plate with holes to make the system more modular
+              </p> -->
           </div>
 
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/portfolio/deepseasedimentsampler/lander.png"  class="portfolio-img" alt="">
+          </div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="portfolio-details-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
@@ -241,28 +250,87 @@
                 }
               </script>
               <div class="swiper-wrapper align-items-center">
+    
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/thrustercageboat.png"  class="portfolio-img" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/hull.png"  class="portfolio-img" alt="">
+                  <img src="assets/img/portfolio/deepseasedimentsampler/init_sampler_state.png"  class="portfolio-img" alt="">
                 </div>
     
-                <!-- <div class="swiper-slide" data-swiper-autoplay="20000000">
-                  <video controls="controls" muted>
-                    <source src="assets/img/portfolio/Capra Robotics/gimbal.mp4">
-                  </video>
+                <!-- <div class="swiper-slide">
+                  <img src="assets/img/portfolio/2.007/c_v2final.jpg" alt="">
+                </div> -->
+    
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- <div class="ratio-16-9"> <iframe title="Chassis V1.5" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/d5d3f6cdbbc24341acb3647226e63179/embed"> </iframe></div> -->
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h2>Overview</h2>
+            <p>
+              When the lander is initially deployed and for the majority of the descent the sampler will sit below the bottom of the lander.             </p>
+            <p>
+              Once the lander nears the seafloor there are three stages to the collection process: 
+              <ol>
+                <li>In the first stage, the base plate of the sampler lands and settles against the seafloor.</li>
+                <li>In the second stage, the lander continues to sink until it makes contact with the seafloor. The weight of the lander and the force of the seafloor upwards acts on the base plate
+                  to trigger a spring-pulley system that inserts the collection tube into the sediment.</li>
+                <li>In the third and final stage, the tube is retracted from the sediment and the base plate reaches its final position within the lander’s bay.</li> 
+              </ol>
+              Once the collection tube has been retracted, the lander can begin its ascent with the sampler and sample safely tucked away into the bay. 
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/portfolio/deepseasedimentsampler/stages.png"  class="portfolio-img" alt="">
+          </div>
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <!-- <h2>Collection tube subsystem</h2> -->
+            <p>Once the collection tube has been retracted, the lander can begin its ascent with the sampler and sample safely tucked away into the bay.</p>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
+                  },
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper align-items-center">
+    
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/deepseasedimentsampler/ascent_state.png"  class="portfolio-img" alt="">
+                </div>
+    
+                <!-- <div class="swiper-slide">
+                  <img src="assets/img/portfolio/2.007/c_v2final.jpg" class="portfolio-img" alt="">
                 </div>
 
+                
                 <div class="swiper-slide" data-swiper-autoplay="20000000">
                   <video controls="controls" muted>
-                    <source src="assets/img/portfolio/Capra Robotics/robot driving (1).mp4">
-                  </video>
-                </div>
-
-                <div class="swiper-slide" data-swiper-autoplay="20000000">
-                  <video controls="controls" muted>
-                    <source src="assets/img/portfolio/Capra Robotics/robot driving (2).mp4">
+                    <source src="assets/img/portfolio/2.007/c_testv2.mov">
                   </video>
                 </div> -->
     
@@ -273,7 +341,7 @@
             </div>
           </div>
         </div>
-
+        
         <div class="row justify-content-between gy-4 mt-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="portfolio-details-slider swiper init-swiper">
@@ -297,80 +365,59 @@
                 }
               </script>
               <div class="swiper-wrapper align-items-center">
+    
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/thruster_pod.JPG"  class="portfolio-img" alt="">
+                  <img src="assets/img/portfolio/deepseasedimentsampler/Collection Tube Components.png"  class="portfolio-img" alt="">
                 </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/thruster.png"  class="portfolio-img" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/thruster_in_boat.png"  class="portfolio-img" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/thruster_in_hull.png"  class="portfolio-img" alt="">
+
+                <!-- <div class="swiper-slide">
+                  <img src="assets/img/portfolio/2.007/Capture 2 .png"  class="portfolio-img" alt="">
                 </div>
     
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/2.007/g_6v2.jpg"  class="portfolio-img" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/2.007/g_7winch.jpg"  class="portfolio-img" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/2.007/l_v2.jpg"  class="portfolio-img" alt="">
+                </div>
+
+                <div class="swiper-slide" data-swiper-autoplay="20000000">
+                  <video controls="controls" muted>
+                    <source src="assets/img/portfolio/2.007/g8_sucesslift.mp4">
+                  </video>
+                </div> -->
+
               </div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
               <div class="swiper-pagination"></div>
+              </div>
             </div>
             <!-- <div class="ratio-16-9"> <iframe title="Chassis V1.5" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/d5d3f6cdbbc24341acb3647226e63179/embed"> </iframe></div> -->
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h2>"Ship Happens" (2021-2023)</h2>
-            <h3>Azimuth Thrusters</h3>
-            <p>
-              To increase our maneuverability and prevent us from drifting into obstacles, we developed an azimuth thruster pod design that allows us to rotate our Blue Robotics T200 Thrusters in
-              place. Each T200 thruster is attached to a servo motor through a PVC pipe, allowing us to reorient the thruster relative to the hull. The system is mounted inside a larger PVC pipe to create
-              a telescoping mechanism, allowing us to lift the thruster into the hull during transport and deploy the thrusters in the water. To integrate the thruster pods, we drilled a vertical hole into the bottom of each hull, epoxied the PVC to the cavity, and resealed using fiberglass strips soaked in epoxy resin.</p>
-          </div>
-        </div>
-
-        <div class="row justify-content-between gy-4 mt-4">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <!-- <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "navigation": {
-                    "nextEl": ".swiper-button-next",
-                    "prevEl": ".swiper-button-prev"
-                  },
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-              <div class="swiper-wrapper align-items-center">
-    
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/2.007/c_fabv1.jpg"  class="portfolio-img" alt="">
-                </div>
-    
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/2.007/c_v2final.jpg" alt="">
-                </div>
-    
-              </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-pagination"></div>
-            </div> -->
-            <h3>Ball Shooter Mechanism</h3>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h2>Collection tube subsystem</h2>
+              <p>The collection tube captures sediment once the lander reaches the seafloor and secures it until retrieval, minimizing disturbance to the top layers of the seafloor.</p>
               <p>
-                For this challenge, our boat needed to shoot racquetballs into 5-gallon buckets around 8 feet away. 
-
-                Our launching mechanism consisted of 3 main parts: a rotating feeder, a turret, and a flywheel system. The rotating feeder holds up to eight balls and continuously rotates to drop them into the flywheel system. The flywheel consists of a series of rubber wheels that compress each racquetball, imparting spin before launching it. This entire shooting mechanism is mounted on a turret, which uses a servo motor to rotate the shooter independently from the rest of the boat, allowing for precise aiming and movement.
+                The subsystem consists of a:
+                <li>Tube cap that houses a ball valve and acts as the interface between the collection tube and the frame subsystem.</li>
+                <li>The tube itself which holds the sample.</li>
+                <li>A sediment collection apparatus which our team called the medusa.</li>
+                <li> A nose cone to drive into seabed and hold sediment collection apparatus in place.</li>
               </p>
+            </div>
+          </div>
+
+          
+
+        <div class="row justify-content-between gy-4 mt-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <!-- <h2>Hook</h2> -->
+            <p>The ball valve uses a spring and o-ring to allows water to pass as the tube drives into the ground but creates a strong seal during ascension. In images 1 and 2, the tube is being driven into the ground, so water pushes the spring-ball upward, opening the seal. In image 3, as the lander ascends, water flows from above, pushing the ball into the o-ring to create a secure pressure seal.</p>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -396,36 +443,82 @@
               </script>
               <div class="swiper-wrapper align-items-center">
     
-                <div class="swiper-slide" data-swiper-autoplay="20000000">
-                  <video controls="controls" muted>
-                    <source src="assets/img/portfolio/Arcturus/ballshoots.mp4">
-                  </video>
-                </div>
-                
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/ball_shooter_d.png"  class="portfolio-img" alt="">
+                  <img src="assets/img/portfolio/deepseasedimentsampler/ball_valve.png"  class="portfolio-img" alt="">
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/ball_shooter_a.png"  class="portfolio-img" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/ball_shooter_b.png"  class="portfolio-img" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Arcturus/ball_shooter_c.png"  class="portfolio-img" alt="">
-                </div>
-    
               </div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
               <div class="swiper-pagination"></div>
             </div>
+            <!-- <div class="ratio-16-9"> <iframe title="Chassis V2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/2a53b74edbf14fd9af19c2070a879d9e/embed"> </iframe></div> -->
+          </div>
+      </div>
+
+      <div class="row justify-content-between gy-4 mt-4">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+  
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/deepseasedimentsampler/Core Catcher.png"  class="portfolio-img" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/deepseasedimentsampler/metalcore.png"  class="portfolio-img" alt="">
+              </div>
+  
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/deepseasedimentsampler/corecatcher.jpg"  class="portfolio-img" alt="">
+              </div>
+
+              <!-- <div class="swiper-slide" data-swiper-autoplay="20000000">
+                <video controls="controls" muted>
+                  <source src="assets/img/portfolio/2.007/g8_sucesslift.mp4">
+                </video>
+              </div> -->
+
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <!-- <div class="ratio-16-9"> <iframe title="Chassis V1.5" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/d5d3f6cdbbc24341acb3647226e63179/embed"> </iframe></div> -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <!-- <h2>Collection tube subsystem</h2> -->
+            <p>The core catcher apparatus is a hollow demi sphere-shaped piece of plastic. The hollow demi-sphere shape is formed by a ring of slightly triangular-shaped fingers that are pushed open by entering sediment and closed upon retraction from the upward motion of the tube paired with the weight of the sediment. This design results in sediment layers mixing at the edges of the core sample, but sediment layers at the center of the sample will be preserved. We originally tried to make this shape with thinly cut sheet metal, but testing reveals that an off-the-shelf core-catcher was more effective.</p>
           </div>
         </div>
 
         <div class="row justify-content-between gy-4 mt-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h2>Frame subsystem</h2>
+            <p>The frame subsystem is responsible for driving and removing the collection tube into the seafloor. The system can be broken into two parts: the static system and dynamic system.</p>
+            <p>The static system remains permanently fixed relative to the lander. The top plate, rod plate, aluminum rails, and box tube extrusions are the foundation of the static segment and provide the majority of the frame’s stiffness. The 6 aluminum rods prevent the spring from shifting or buckling during compression.  There are also two pulleys connected to the static frame.</p>
+            <p>The dynamic subsystem slides relative to the lander drives the tube into the soil and once triggered retracts the collection tube into the lander bay. The dynamic system is the core of the mechanical sediment collection and consists primarily of two Delrin posts fastened to a base plate. At the top of each post is a pocket for the tooling ball.  There are four cables that attach to an arm on the tooling ball go around the pulley and connect to a rod at the side of the collection tube cap.</p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="portfolio-details-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
                 {
@@ -448,48 +541,32 @@
               </script>
               <div class="swiper-wrapper align-items-center">
     
-                <div class="swiper-slide" data-swiper-autoplay="20000000">
-                  <video controls="controls" muted>
-                    <source src="assets/img/portfolio/Arcturus/watergun.mp4">
-                  </video>
-                </div>
-
-                <!-- <div class="swiper-slide" data-swiper-autoplay="20000000">
-                  <video controls="controls" muted>
-                    <source src="assets/img/portfolio/Capra Robotics/lift solidworks.mp4">
-                  </video>
-
-                </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Capra Robotics/lift (1).jpg"  class="portfolio-img" alt="">
-                </div>
+                  <img src="assets/img/portfolio/deepseasedimentsampler/Frame Components1.png"  class="portfolio-img" alt="">
+                </div>    
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/Capra Robotics/lift (2).jpg"  class="portfolio-img" alt="">
+                  <img src="assets/img/portfolio/deepseasedimentsampler/Frame Components2.png"  class="portfolio-img" alt="">
                 </div>
-     -->
               </div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
               <div class="swiper-pagination"></div>
             </div>
-            <!-- <div class="ratio-16-9"> <iframe title="Chassis V1.5" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/d5d3f6cdbbc24341acb3647226e63179/embed"> </iframe></div> -->
+            <!-- <div class="ratio-16-9"> <iframe title="Chassis V2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/2a53b74edbf14fd9af19c2070a879d9e/embed"> </iframe></div> -->
           </div>
+      </div>
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <!-- <h2>"Ship Happens" (2021-2023)</h2> -->
-            <h3>Water Gun</h3>
-            <p>For this challenge, our boat needed to shoot water at a target to raise a ball. To increase the chances of hitting the target, we opted for continuous water flow by using a pump that draws water directly from the lake. The pump's output was connected to servos that control both yaw and pitch, allowing precise aiming of the water gun without requiring movement of the entire boat.</p>
-          </div>
+      <div class="row justify-content-between gy-4 mt-4">
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+          <p>The core of the frame subsystem is a spring-pulley mechanism that utilizes the change in distance to push the collection tube into the sediment and eventually pull the collection tube out. 
+
+            While the lander is descending, the base plate sits below the bottom of the lander and will make contact with the ground first. 
+            
+            The weight of the lander will push the Delrin posts into the box tubes. As the post travels up, the tension in the cables will drive the collection tube into the ground and compress the two springs. 
+            
+            The post will slide up 159mm where the tooling balls are pulled out of the post releasing the tension in the cable, allowing the springs to decompress and push the tube into the landing bay.</p>
+          <img src="assets/img/portfolio/deepseasedimentsampler/stages.png"  class="portfolio-img" alt="">
         </div>
-
-        <!-- <div class="row justify-content-between gy-4 mt-4">
-          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
-            <h2>Lift CAD</h2>
-            <div class="ratio-16-9"> <iframe title="Chassis V2" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/2a53b74edbf14fd9af19c2070a879d9e/embed"> </iframe></div>
-          </div>
-        </div> -->
-</div>
-
       </div>
 
     </section><!-- /Portfolio Details Section -->
