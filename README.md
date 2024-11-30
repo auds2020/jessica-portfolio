@@ -1,3 +1,3 @@
 ﻿# jessica-portfolio
 
-Driving the website jessica-lam.com 
+This repo drives the website jessica-lam.com 
